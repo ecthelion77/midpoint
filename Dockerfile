@@ -1,7 +1,7 @@
 FROM debian:stretch
 MAINTAINER František Dvořák <valtri@civ.zcu.cz>
 
-ENV v 3.6-SNAPSHOTE
+ENV v 3.6-SNAPSHOT
 
 WORKDIR /root
 
