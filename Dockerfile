@@ -53,4 +53,5 @@ RUN ln -s /usr/share/java/mysql-connector-java.jar /var/lib/tomcat8/lib/
 RUN wget -nv -P /var/opt/midpoint/icf-connectors/ http://nexus.evolveum.com/nexus/content/repositories/openicf-releases/org/forgerock/openicf/connectors/scriptedsql-connector/1.1.2.0.em3/scriptedsql-connector-1.1.2.0.em3.jar
 
 COPY docker-entry.sh /
+RUN chmod 777 /docker-entry.sh
 CMD /docker-entry.sh /bin/bash -l
